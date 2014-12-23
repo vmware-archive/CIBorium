@@ -2,6 +2,10 @@
 
 CIBorium is a [Jenkins](http://jenkins-ci.org/) plugin that integrates with [Docker](https://www.docker.com/). This will let you create and publish docker images, and will also let you run build steps inside a docker container.
 
+## Licensing
+
+CiBorium is licensed under 3-clause BSD license. More information can be found inside COPYING file.
+
 ## Background
 
 Jenkins is a wonderful system for managing builds and complex continuous integration workflows. Unfortunately, as the number of jobs grows and the more heterogeneous your software gets, the harder it is to make sure builds are repeatable.
