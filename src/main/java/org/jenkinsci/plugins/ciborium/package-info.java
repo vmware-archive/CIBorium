@@ -51,4 +51,4 @@
  *   is called before {@link hudson.tasks.BuildWrapper#setUp(hudson.model.AbstractBuild, hudson.Launcher, hudson.model.BuildListener)}</li>
  * </ul>
  */
-package org.jenkinsci.plugins.CIBorium;
+package org.jenkinsci.plugins.ciborium;

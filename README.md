@@ -12,7 +12,7 @@ Jenkins is a wonderful system for managing builds and complex continuous integra
 
 CIBorium attempts to solve this problem by letting your project define what the build environment should look like.  Using Dockerfiles and docker images, builds can choose what software is installed on the environment running the build.
 
-For example, your project might need install level dependencies in order to run (lib files, dbs for integration testing, etc.).  In a traditional Jenkins environment, you would ether install the software across all slaves, or you have a set of slaves running different software and builds tied to those slaves.  With this plugin, the project is able to define what the runtime operating system is, whats installed on it, and the configurations.
+For example, your project might need install level dependencies in order to run (lib files, dbs for integration testing, etc.).  In a traditional Jenkins environment, you would ether install the software across all slaves, or you have a set of slaves running different software and builds tied to those slaves.  With the CIBorium plugin, the project is able to define what the runtime operating system is, whats installed on it, and the configurations.
 
 ## Features
 
@@ -41,7 +41,7 @@ Build a docker image.
 ```
 job {
   configure {
-    it / 'builders' << 'org.jenkinsci.plugins.CIBorium.DockerBuildImageBuilder' {
+    it / 'builders' << 'org.jenkinsci.plugins.ciborium.DockerBuildImageBuilder' {
       // file to use.  If this is a directory, then a 'Dockerfile' must found there.  If this is a 
       // file, then the content is piped into docker build
       // Defaults to '.'
@@ -62,7 +62,7 @@ job {
 Isolate the build inside a docker container
 
 ```
-it / 'buildWrappers' / 'org.jenkinsci.plugins.CIBorium.DockerBuildWrapper' {
+it / 'buildWrappers' / 'org.jenkinsci.plugins.ciborium.DockerBuildWrapper' {
   // image name to run in. Most projects build the image as the first build step.
   // Defaults to 'jenkins:<project's name>'
   dockerImage()

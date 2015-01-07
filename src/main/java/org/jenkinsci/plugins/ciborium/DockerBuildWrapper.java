@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package org.jenkinsci.plugins.CIBorium;
+package org.jenkinsci.plugins.ciborium;
 
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
@@ -56,7 +56,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * The {@link org.jenkinsci.plugins.CIBorium.DockerBuildWrapper} attempts to run all build steps
+ * The {@link org.jenkinsci.plugins.ciborium.DockerBuildWrapper} attempts to run all build steps
  * inside new docker containers.  Because of the way jenkins works, each build step is only executed
  * once the last build step was successful.  Because of this behavior, this wrapper will put each
  * build step in its own docker image.
