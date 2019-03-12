@@ -49,7 +49,7 @@
     <license>
       <name>BSD</name>
       <comments>All source code is under the BSD license.</comments>
-      <url>http://opensource.org/licenses/BSD-3-Clause</url>
+      <url>https://opensource.org/licenses/BSD-3-Clause</url>
     </license>
   </licenses>
 
@@ -64,7 +64,7 @@
   <scm>
     <connection>scm:git:git://github.com/pivotalsoftware/CIBorium.git</connection>
     <developerConnection>scm:git:git@github.com:pivotalsoftware/CIBorium.git</developerConnection>
-    <url>http://github.com/pivotalsoftware/CIBorium</url>
+    <url>https://github.com/pivotalsoftware/CIBorium</url>
   </scm>
 
   <dependencies>
@@ -117,14 +117,14 @@
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories>
 
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
 </project>
