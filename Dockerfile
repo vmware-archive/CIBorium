@@ -5,7 +5,7 @@
 # Version 2.0 (the "License?); you may not use this file except in compliance
 # with the License. You may obtain a copy of the License at
 #
-# http://www.apache.org/licenses/LICENSE-2.0
+# https://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -26,7 +26,7 @@ RUN apt-get update -y
 RUN \
   apt-get install -y wget && \
   wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add - && \
-  echo "deb http://pkg.jenkins-ci.org/debian binary/" > /etc/apt/sources.list.d/jenkins.list && \
+  echo "deb http://pkg.jenkins-ci.org/debian/ binary/" > /etc/apt/sources.list.d/jenkins.list && \
   apt-get install -y jenkins openjdk-7-jdk iptables ca-certificates lxc
 
 ADD https://get.docker.io/builds/Linux/x86_64/docker-latest /usr/local/bin/docker
