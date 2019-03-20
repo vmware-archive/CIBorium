@@ -1,6 +1,6 @@
 # CIBorium
 
-CIBorium is a [Jenkins](http://jenkins-ci.org/) plugin that integrates with [Docker](https://www.docker.com/). This will let you create and publish docker images, and will also let you run build steps inside a docker container.
+CIBorium is a [Jenkins](https://jenkins-ci.org/) plugin that integrates with [Docker](https://www.docker.com/). This will let you create and publish docker images, and will also let you run build steps inside a docker container.
 
 ## Licensing
 
